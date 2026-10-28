@@ -21,7 +21,7 @@ _current_dir = os.path.dirname(os.path.abspath(__file__))
 if _current_dir not in sys.path:
     sys.path.insert(0, _current_dir)
 
-from py.nodes import M3SongPlanner
+from .py.nodes import M3SongPlanner
 
 NODE_CLASS_MAPPINGS = {
     "M3SongPlanner": M3SongPlanner,
